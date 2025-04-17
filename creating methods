@@ -1,0 +1,51 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.numbersdemo2;
+
+/**
+ *
+ * @author polit
+ */
+
+
+import java.util.Scanner;
+public class NumbersDemo2 {
+    public static void main (String [] args){
+        Scanner input =  new Scanner(System.in);
+        
+
+        System.out.println("Enter  number1");
+        int Number1 = input.nextInt();
+
+        System.out.println("Enter number2");
+        int Number2 = input.nextInt();
+
+        displayTwiceTheNumber(Number1);
+        displayNumberPlusFive(Number1);
+        displayNumberSquared(Number1);
+
+
+System.out.println(" " );
+
+        displayTwiceTheNumber(Number2);
+        displayNumberPlusFive(Number2);
+        displayNumberSquared(Number2);
+    }
+
+    public static void displayTwiceTheNumber(int P){
+
+       System.out.println( P + " Twice is " + (P * 2));
+    }
+
+    public static void displayNumberPlusFive(int P){
+        System.out.println( P + " plus five is " + (P + 5));
+    
+    }
+
+    public static void displayNumberSquared(int P){
+        System.out.println( P + " Squard is " + (P * P));
+    }
+}
+  
